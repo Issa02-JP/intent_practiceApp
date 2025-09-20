@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Intent Practice App"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnOpenMap"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Map"
+        android:theme="@style/Theme.IntentPracticeApp"
+        />
+
+    <Button
+        android:id="@+id/btnSendEmail"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Email"
+        android:theme="@style/Theme.IntentPracticeApp"
+        />
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:theme="@style/Theme.IntentPracticeApp"
+        />
+
+</LinearLayout>
