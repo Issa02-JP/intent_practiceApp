@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         btnOpenMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri location = Uri.parse("geo:0,0?q=Mariveles+Bataan");
+                Uri location = Uri.parse("geo:0,0?q=Orani+Bataan");
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
                 if (mapIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(mapIntent);
@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                emailIntent.setData(Uri.parse("mailto:yourteacher@email.com"));
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "My App Feedback");
-                emailIntent.putExtra(Intent.EXTRA_TEXT, "Hello, here's some feedback about the app.");
+                emailIntent.setData(Uri.parse("mailto:yourprofessor@email.com"));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "My Feedback");
+                emailIntent.putExtra(Intent.EXTRA_TEXT, "Hello, here's some feedback.");
                 if (emailIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(emailIntent);
                 }
